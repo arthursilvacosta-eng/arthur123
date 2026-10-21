@@ -1,0 +1,615 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>VetCare Local</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+
+        <div class="logo">
+            🐾 VetCare Local
+        </div>
+
+        <button id="menuBtn">☰</button>
+
+        <nav id="menu">
+            <a href="#inicio">Início</a>
+            <a href="#clinicas">Veterinários</a>
+            <a href="#imagens">Imagens</a>
+            <a href="#presentes">Presentes</a>
+            <a href="#tratamentos">Tratamentos</a>
+            <a href="#medicacoes">Medicações</a>
+            <a href="#alimentacao">Alimentação</a>
+            <a href="#pagamentos">Pagamentos</a>
+        </nav>
+
+    </header>
+
+
+    <main>
+
+        <section id="inicio" class="hero">
+
+            <div>
+
+                <h1>Cuidados para o seu melhor amigo 🐶🐱</h1>
+
+                <p>
+                    Encontre informações sobre clínicas veterinárias,
+                    tratamentos, exames, alimentação e cuidados para pets
+                    em Teresina, Timon e região.
+                </p>
+
+                <a href="#clinicas" class="botao">
+                    Encontrar veterinário
+                </a>
+
+            </div>
+
+        </section>
+
+
+        <section class="aviso">
+
+            <h2>⚠️ Importante</h2>
+
+            <p>
+                Horários, telefones, valores e formas de pagamento podem
+                mudar. Confirme essas informações diretamente com o
+                estabelecimento antes de ir.
+            </p>
+
+            <p>
+                Medicamentos devem ser utilizados somente com orientação
+                veterinária.
+            </p>
+
+        </section>
+
+
+        <!-- VETERINÁRIOS -->
+
+        <section id="clinicas">
+
+            <h2>🏥 Veterinários e clínicas</h2>
+
+            <p>
+                Consulte algumas opções de atendimento em Teresina e Timon.
+            </p>
+
+            <input
+                type="text"
+                id="pesquisa"
+                placeholder="🔎 Pesquisar clínica, cidade ou serviço..."
+            >
+
+            <div id="listaClinicas" class="grid"></div>
+
+        </section>
+
+
+        <!-- IMAGENS -->
+
+        <section id="imagens">
+
+            <h2>📸 Imagens e cuidados</h2>
+
+            <div class="grid imagens">
+
+                <article class="imagem-card">
+                    <div class="imagem">🐶</div>
+                    <h3>Cães</h3>
+                    <p>
+                        Consultas regulares ajudam a acompanhar a saúde
+                        do seu cachorro.
+                    </p>
+                </article>
+
+                <article class="imagem-card">
+                    <div class="imagem">🐱</div>
+                    <h3>Gatos</h3>
+                    <p>
+                        Gatos também precisam de vacinação, exames e
+                        acompanhamento veterinário.
+                    </p>
+                </article>
+
+                <article class="imagem-card">
+                    <div class="imagem">🩺</div>
+                    <h3>Exames</h3>
+                    <p>
+                        Exames podem ajudar o veterinário a identificar
+                        problemas de saúde.
+                    </p>
+                </article>
+
+                <article class="imagem-card">
+                    <div class="imagem">❤️</div>
+                    <h3>Recuperação</h3>
+                    <p>
+                        Após tratamentos, siga as orientações do veterinário
+                        durante a recuperação.
+                    </p>
+                </article>
+
+            </div>
+
+        </section>
+
+
+        <!-- PRESENTES -->
+
+        <section id="presentes">
+
+            <h2>🎁 Presentes para o pet</h2>
+
+            <p>
+                Depois de um tratamento ou exame, alguns presentes podem
+                ser usados como forma de carinho, desde que não atrapalhem
+                a recuperação.
+            </p>
+
+            <div class="grid">
+
+                <article class="presente">
+                    <span>🧸</span>
+                    <h3>Brinquedo macio</h3>
+                    <p>
+                        Uma opção simples para pets que já estão liberados
+                        para brincar.
+                    </p>
+                </article>
+
+                <article class="presente">
+                    <span>🍖</span>
+                    <h3>Petisco apropriado</h3>
+                    <p>
+                        Pode ser utilizado quando o veterinário não
+                        determinou restrições alimentares.
+                    </p>
+                </article>
+
+                <article class="presente">
+                    <span>🛏️</span>
+                    <h3>Cama confortável</h3>
+                    <p>
+                        Pode proporcionar um local tranquilo para descanso.
+                    </p>
+                </article>
+
+                <article class="presente">
+                    <span>🪀</span>
+                    <h3>Brinquedo interativo</h3>
+                    <p>
+                        Ajuda no enriquecimento ambiental quando o pet
+                        estiver recuperado.
+                    </p>
+                </article>
+
+                <article class="presente">
+                    <span>🪮</span>
+                    <h3>Escova</h3>
+                    <p>
+                        Pode ser utilizada para cuidados com a pelagem,
+                        respeitando possíveis restrições.
+                    </p>
+                </article>
+
+                <article class="presente">
+                    <span>🧺</span>
+                    <h3>Cobertor</h3>
+                    <p>
+                        Uma opção confortável para o período de descanso.
+                    </p>
+                </article>
+
+            </div>
+
+            <div class="aviso">
+
+                <strong>⚠️ Atenção:</strong>
+
+                depois de cirurgias, sedação ou determinados exames,
+                o pet pode precisar evitar brincadeiras, alimentos ou
+                determinados acessórios.
+
+            </div>
+
+        </section>
+
+
+        <!-- TRATAMENTOS -->
+
+        <section id="tratamentos">
+
+            <h2>🩺 Tipos de tratamentos e serviços</h2>
+
+            <div class="grid">
+
+                <article class="card">
+                    <h3>Consulta</h3>
+                    <p>Avaliação geral da saúde do animal.</p>
+                </article>
+
+                <article class="card">
+                    <h3>💉 Vacinação</h3>
+                    <p>Aplicação de vacinas conforme protocolo veterinário.</p>
+                </article>
+
+                <article class="card">
+                    <h3>🔬 Exames laboratoriais</h3>
+                    <p>
+                        Hemograma, bioquímica, urina, citologia e outros.
+                    </p>
+                </article>
+
+                <article class="card">
+                    <h3>🩻 Exames de imagem</h3>
+                    <p>
+                        Ultrassonografia, radiografia e outros exames.
+                    </p>
+                </article>
+
+                <article class="card">
+                    <h3>🏥 Cirurgia</h3>
+                    <p>
+                        Procedimentos cirúrgicos realizados conforme
+                        avaliação veterinária.
+                    </p>
+                </article>
+
+                <article class="card">
+                    <h3>🚑 Emergência</h3>
+                    <p>
+                        Atendimento para situações que necessitam de
+                        cuidados imediatos.
+                    </p>
+                </article>
+
+                <article class="card">
+                    <h3>🦷 Odontologia</h3>
+                    <p>
+                        Avaliação e tratamento da saúde bucal.
+                    </p>
+                </article>
+
+                <article class="card">
+                    <h3>🐾 Dermatologia</h3>
+                    <p>
+                        Tratamento e investigação de problemas de pele.
+                    </p>
+                </article>
+
+                <article class="card">
+                    <h3>❤️ Cardiologia</h3>
+                    <p>
+                        Avaliação do coração e sistema cardiovascular.
+                    </p>
+                </article>
+
+                <article class="card">
+                    <h3>🦴 Ortopedia</h3>
+                    <p>
+                        Avaliação de ossos, articulações e movimentos.
+                    </p>
+                </article>
+
+            </div>
+
+        </section>
+
+
+        <!-- MEDICAMENTOS -->
+
+        <section id="medicacoes">
+
+            <h2>💊 Tipos de medicações</h2>
+
+            <div class="grid">
+
+                <article class="card">
+                    <h3>Antiparasitários</h3>
+                    <p>
+                        Utilizados contra determinados parasitas,
+                        conforme indicação veterinária.
+                    </p>
+                </article>
+
+                <article class="card">
+                    <h3>Antimicrobianos</h3>
+                    <p>
+                        Podem ser prescritos para determinadas infecções.
+                    </p>
+                </article>
+
+                <article class="card">
+                    <h3>Analgésicos</h3>
+                    <p>
+                        Utilizados para controle da dor quando prescritos.
+                    </p>
+                </article>
+
+                <article class="card">
+                    <h3>Anti-inflamatórios</h3>
+                    <p>
+                        Podem ser indicados em determinados tratamentos.
+                    </p>
+                </article>
+
+                <article class="card">
+                    <h3>Antieméticos</h3>
+                    <p>
+                        Podem ser utilizados para controlar náuseas e vômitos.
+                    </p>
+                </article>
+
+                <article class="card">
+                    <h3>Suplementos</h3>
+                    <p>
+                        Alguns animais podem precisar de suplementação
+                        específica.
+                    </p>
+                </article>
+
+            </div>
+
+            <div class="aviso">
+
+                <strong>🚨 Nunca dê medicamentos humanos ao animal por
+                conta própria.</strong>
+
+                <br><br>
+
+                A dose e o medicamento adequado dependem da espécie,
+                peso, idade, doença e outras condições do animal.
+
+            </div>
+
+        </section>
+
+
+        <!-- ALIMENTAÇÃO -->
+
+        <section id="alimentacao">
+
+            <h2>🍗 Alimentação após tratamentos e exames</h2>
+
+            <div class="grid">
+
+                <article class="card">
+
+                    <h3>🐶 Cachorros</h3>
+
+                    <p>
+                        Dependendo do tratamento, o veterinário pode
+                        recomendar manter a alimentação habitual ou utilizar
+                        uma dieta específica.
+                    </p>
+
+                </article>
+
+
+                <article class="card">
+
+                    <h3>🐱 Gatos</h3>
+
+                    <p>
+                        A alimentação deve seguir a orientação veterinária,
+                        principalmente após procedimentos ou exames.
+                    </p>
+
+                </article>
+
+
+                <article class="card">
+
+                    <h3>💧 Hidratação</h3>
+
+                    <p>
+                        O acesso à água deve seguir as orientações dadas
+                        pelo veterinário, principalmente após procedimentos.
+                    </p>
+
+                </article>
+
+
+                <article class="card">
+
+                    <h3>🥣 Dietas especiais</h3>
+
+                    <p>
+                        Algumas doenças podem exigir alimentos específicos,
+                        como dietas para determinadas condições clínicas.
+                    </p>
+
+                </article>
+
+
+                <article class="card">
+
+                    <h3>🧪 Após exames</h3>
+
+                    <p>
+                        Alguns exames exigem jejum. A alimentação deve
+                        ser retomada conforme orientação da clínica.
+                    </p>
+
+                </article>
+
+
+                <article class="card">
+
+                    <h3>❤️ Recuperação</h3>
+
+                    <p>
+                        Em alguns casos podem ser recomendados alimentos
+                        úmidos ou dietas de recuperação.
+                    </p>
+
+                </article>
+
+            </div>
+
+        </section>
+
+
+        <!-- PAGAMENTOS -->
+
+        <section id="pagamentos">
+
+            <h2>💳 Formas de pagamento e valores</h2>
+
+            <div class="grid">
+
+                <article class="card">
+                    <h3>💵 Dinheiro</h3>
+                    <p>
+                        Forma de pagamento normalmente aceita por clínicas,
+                        mas confirme antes do atendimento.
+                    </p>
+                </article>
+
+                <article class="card">
+                    <h3>💳 Cartão</h3>
+                    <p>
+                        Crédito e débito podem estar disponíveis dependendo
+                        do estabelecimento.
+                    </p>
+                </article>
+
+                <article class="card">
+                    <h3>📱 PIX</h3>
+                    <p>
+                        Confirme diretamente com a clínica.
+                    </p>
+                </article>
+
+                <article class="card">
+                    <h3>📲 NFC</h3>
+                    <p>
+                        Alguns estabelecimentos disponibilizam pagamento
+                        por aproximação.
+                    </p>
+                </article>
+
+            </div>
+
+
+            <div class="aviso">
+
+                <h3>💰 Sobre os valores</h3>
+
+                <p>
+                    Consultas, exames, cirurgias e internações podem ter
+                    preços diferentes dependendo do animal e do procedimento.
+                </p>
+
+                <p>
+                    Por isso, quando não existe um preço público confiável,
+                    o site apresenta <strong>"Sob consulta"</strong>.
+                </p>
+
+            </div>
+
+        </section>
+
+
+        <!-- FAQ -->
+
+        <section id="faq">
+
+            <h2>❓ Perguntas frequentes</h2>
+
+            <details>
+
+                <summary>
+                    Posso dar remédio humano para meu pet?
+                </summary>
+
+                <p>
+                    Não faça isso por conta própria. Alguns medicamentos
+                    podem ser perigosos para animais.
+                </p>
+
+            </details>
+
+
+            <details>
+
+                <summary>
+                    Todo animal precisa fazer exames?
+                </summary>
+
+                <p>
+                    Não necessariamente. O veterinário decide quais exames
+                    são necessários de acordo com a situação do animal.
+                </p>
+
+            </details>
+
+
+            <details>
+
+                <summary>
+                    Posso dar petisco depois de uma cirurgia?
+                </summary>
+
+                <p>
+                    Somente se estiver de acordo com as orientações
+                    fornecidas pela equipe veterinária.
+                </p>
+
+            </details>
+
+
+            <details>
+
+                <summary>
+                    Os preços são fixos?
+                </summary>
+
+                <p>
+                    Não. Os preços podem variar entre clínicas,
+                    procedimentos e condições do animal.
+                </p>
+
+            </details>
+
+        </section>
+
+    </main>
+
+
+    <footer>
+
+        <h3>🐾 VetCare Local</h3>
+
+        <p>
+            Informações para facilitar a busca por cuidados veterinários.
+        </p>
+
+        <p>
+            Teresina • Timon • Região
+        </p>
+
+        <small>
+            As informações devem ser confirmadas diretamente com cada
+            estabelecimento.
+        </small>
+
+    </footer>
+
+
+    <script src="java.js"></script>
+
+</body>
+
+</html>

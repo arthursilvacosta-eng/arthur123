@@ -1,0 +1,376 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: #f3faf5;
+    color: #183b28;
+    line-height: 1.6;
+}
+
+
+/* CABEÇALHO */
+
+header {
+    background: #00a651;
+    color: white;
+    padding: 15px 5%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 3px 10px #0003;
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+nav {
+    display: flex;
+    gap: 15px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: #caffd8;
+}
+
+#menuBtn {
+    display: none;
+    border: none;
+    background: transparent;
+    color: white;
+    font-size: 1.7rem;
+    cursor: pointer;
+}
+
+
+/* HERO */
+
+.hero {
+    min-height: 500px;
+    padding: 70px 8%;
+    display: flex;
+    align-items: center;
+
+    background:
+        linear-gradient(#003d2088, #003d2088),
+        url("https://images.unsplash.com/photo-1601758228041-f3b2795255f1?auto=format&fit=crop&w=1600&q=80");
+
+    background-size: cover;
+    background-position: center;
+    color: white;
+}
+
+.hero div {
+    max-width: 700px;
+}
+
+.hero h1 {
+    font-size: clamp(2rem, 5vw, 4rem);
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+}
+
+.botao {
+    display: inline-block;
+    background: #00c96b;
+    color: white;
+    text-decoration: none;
+    padding: 13px 25px;
+    border-radius: 30px;
+    font-weight: bold;
+}
+
+.botao:hover {
+    background: #008d4b;
+}
+
+
+/* SEÇÕES */
+
+section {
+    width: min(1200px, 92%);
+    margin: auto;
+    padding: 70px 0;
+}
+
+section h2 {
+    color: #007a3d;
+    font-size: 2rem;
+    margin-bottom: 15px;
+}
+
+
+/* AVISOS */
+
+.aviso {
+    background: #fff4cc;
+    border-left: 6px solid #f0b400;
+    padding: 20px;
+    border-radius: 10px;
+    margin: 25px auto;
+    width: min(1100px, 90%);
+}
+
+
+/* PESQUISA */
+
+#pesquisa {
+    width: 100%;
+    padding: 15px;
+    border: 2px solid #b9dfc6;
+    border-radius: 10px;
+    margin: 25px 0;
+    font-size: 1rem;
+}
+
+
+/* GRID */
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 20px;
+}
+
+
+/* CARDS */
+
+.card,
+.clinica,
+.presente,
+.imagem-card {
+    background: white;
+    border-radius: 15px;
+    padding: 22px;
+    box-shadow: 0 4px 15px #00000012;
+    border: 1px solid #dceee2;
+    transition: 0.25s;
+}
+
+.card:hover,
+.clinica:hover,
+.presente:hover,
+.imagem-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 22px #0000001c;
+}
+
+.card h3,
+.clinica h3,
+.presente h3,
+.imagem-card h3 {
+    color: #008c48;
+    margin-bottom: 10px;
+}
+
+
+/* CLÍNICAS */
+
+.clinica {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.clinica .nota {
+    font-size: 1.1rem;
+    font-weight: bold;
+    color: #e39b00;
+}
+
+.clinica .endereco {
+    color: #555;
+}
+
+.clinica .horario {
+    background: #edf9f0;
+    padding: 8px;
+    border-radius: 8px;
+}
+
+.servicos {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+}
+
+.servico {
+    background: #d9f8e4;
+    color: #08733c;
+    padding: 4px 8px;
+    border-radius: 20px;
+    font-size: 0.8rem;
+}
+
+.contatos {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-top: 10px;
+}
+
+.contatos a {
+    text-decoration: none;
+    padding: 8px 12px;
+    border-radius: 8px;
+    color: white;
+    font-weight: bold;
+}
+
+.whatsapp {
+    background: #20bd5a;
+}
+
+.instagram {
+    background: #b52f7f;
+}
+
+.telefone {
+    background: #2474d8;
+}
+
+
+/* IMAGENS */
+
+.imagem {
+    height: 180px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #e8f8ed;
+    border-radius: 12px;
+    font-size: 6rem;
+    margin-bottom: 15px;
+}
+
+
+/* PRESENTES */
+
+.presente span {
+    font-size: 3rem;
+    display: block;
+    margin-bottom: 10px;
+}
+
+
+/* FAQ */
+
+details {
+    background: white;
+    margin: 12px 0;
+    border-radius: 10px;
+    padding: 15px 20px;
+    box-shadow: 0 3px 10px #00000010;
+}
+
+summary {
+    cursor: pointer;
+    font-weight: bold;
+    color: #007a3d;
+}
+
+
+/* RODAPÉ */
+
+footer {
+    background: #063d22;
+    color: white;
+    text-align: center;
+    padding: 40px 20px;
+}
+
+footer h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+
+/* RESPONSIVO */
+
+@media (max-width: 900px) {
+
+    nav {
+        display: none;
+        position: absolute;
+        top: 70px;
+        left: 0;
+        width: 100%;
+        background: #008f48;
+        flex-direction: column;
+        padding: 20px;
+    }
+
+    nav.ativo {
+        display: flex;
+    }
+
+    #menuBtn {
+        display: block;
+    }
+
+}
+
+
+@media (max-width: 600px) {
+
+    header {
+        padding: 12px 4%;
+    }
+
+    .logo {
+        font-size: 1.2rem;
+    }
+
+    .hero {
+        min-height: 430px;
+        padding: 50px 6%;
+    }
+
+    .hero h1 {
+        font-size: 2.1rem;
+    }
+
+    .hero p {
+        font-size: 1rem;
+    }
+
+    section {
+        width: 94%;
+        padding: 45px 0;
+    }
+
+    section h2 {
+        font-size: 1.6rem;
+    }
+
+    .grid {
+        grid-template-columns: 1fr;
+    }
+
+    .imagem {
+        height: 150px;
+    }
+
+}
